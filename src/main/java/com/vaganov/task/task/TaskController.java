@@ -66,7 +66,7 @@ public class TaskController {
     return taskService.updateStatus(taskRequest, id);
   }
 
-
+  @PreAuthorize("hasAuthority('user:update')")
   @PutMapping("/taskComment/{id}")
   public Task updateTaskComments(@PathVariable Integer id, @RequestBody TaskRequest taskRequest){
     return taskService.updateComments(taskRequest,id);
