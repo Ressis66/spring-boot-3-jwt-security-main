@@ -18,22 +18,15 @@ import io.swagger.v3.oas.annotations.servers.Server;
                 ),
                 description = "OpenApi documentation for Spring Security",
                 title = "OpenApi specification - Alex",
-                version = "1.0",
-                license = @License(
-                        name = "Licence name",
-                        url = "https://some-url.com"
-                ),
-                termsOfService = "Terms of service"
+                version = "1.0"
+
         ),
         servers = {
                 @Server(
                         description = "Local ENV",
                         url = "http://localhost:8080"
-                ),
-                @Server(
-                        description = "PROD ENV",
-                        url = "https://aliboucoding.com/course"
                 )
+
         },
         security = {
                 @SecurityRequirement(

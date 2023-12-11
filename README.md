@@ -31,4 +31,8 @@ To build and run the project, follow these steps:
 * Build the project: mvn clean install
 * Run the project: mvn spring-boot:run 
 
--> The application will be available at http://localhost:8080.
+-> The application will be available at http://localhost:8080. It uses BEARER TOKEN for authentication and authorisation.
+The examples of tokens could be taken from Spring CLI.
+
+To test project you can use the following endpoint http://localhost:8080/swagger-ui/index.html
+
